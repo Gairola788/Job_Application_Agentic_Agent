@@ -1,0 +1,46 @@
+AI/ML Intern
+Job Title
+
+Artificial Intelligence Intern (AI/ML Intern)
+
+Job Summary
+
+We are seeking a motivated AI Intern to assist in developing intelligent applications using Artificial Intelligence, Machine Learning, and Natural Language Processing techniques. The intern will work with data, build AI-powered solutions, and support the development of machine learning models for real-world applications.
+
+Responsibilities
+Assist in developing and testing AI and Machine Learning solutions.
+Perform data collection, cleaning, and preprocessing.
+Build and evaluate machine learning models.
+Work with Natural Language Processing (NLP) techniques for text analysis.
+Conduct research on recent AI technologies and methodologies.
+Collaborate with team members on AI-based projects.
+Prepare technical documentation and reports.
+Analyze model performance and suggest improvements.
+Required Skills
+Python Programming
+Machine Learning
+Artificial Intelligence Fundamentals
+Natural Language Processing (NLP)
+Data Structures and Algorithms
+Data Preprocessing
+NumPy
+Pandas
+Scikit-learn
+Git/GitHub
+Problem Solving
+Preferred Skills
+Deep Learning
+TensorFlow or PyTorch
+Large Language Models (LLMs)
+Retrieval-Augmented Generation (RAG)
+Computer Vision
+SQL
+FastAPI
+LangChain
+Vector Databases
+Hugging Face Transformers
+Educational Requirements
+Pursuing or recently completed B.Tech/B.E., BCA, MCA, M.Tech, or equivalent in Computer Science, Information Technology, Artificial Intelligence, or related fields.
+Experience
+Prior internship, academic project, or personal project in AI/ML is preferred.
+Experience with NLP, Computer Vision, or Generative AI projects is a plus.
