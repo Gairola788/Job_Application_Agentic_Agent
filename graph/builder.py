@@ -6,6 +6,8 @@ from nodes.parse_jd import parse_jd
 from nodes.parse_resume import parse_resume
 from nodes.extract_resume_skills import extract_resume_skills
 from nodes.extract_jd_skills import extract_jd_skills
+from nodes.calculate_score import calculate_score
+from graph.routing import route_application
 
 builder = StateGraph(JobApplicationState)
 
@@ -29,6 +31,11 @@ builder.add_node(
      extract_jd_skills
 )
 
+builder.add_node(
+    "calculate_score",
+     calculate_score         
+        )
+
 builder.add_edge(
     START,
     "parse_resume"
@@ -51,12 +58,22 @@ builder.add_edge(
 
 builder.add_edge(
     "extract_resume_skills",
-    END
+    "calculate_score"
 )
 
 builder.add_edge(
     "extract_jd_skills",
-    END
+    "calculate_score"
+)
+
+
+builder.add_conditional_edges(
+    "calculate_score",
+    route_application,
+    {
+        "generate_cover_letter": "generate_cover_letter",
+        "resume_feedback": "resume_feedback",
+    }
 )
 
 graph = builder.compile()

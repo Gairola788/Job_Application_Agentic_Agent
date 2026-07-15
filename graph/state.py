@@ -15,3 +15,6 @@ class JobApplicationState(TypedDict):
 
     # Output
     match_score: float
+    match_reason: str
+    strengths : list[str]
+    missing_skills: list[str]

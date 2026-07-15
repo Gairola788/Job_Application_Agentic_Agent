@@ -28,13 +28,16 @@ initial_state: JobApplicationState = {
     "resume_skills": [],
     "jd_skills": [],
 
-    "match_score": 0.0
+    "match_score": 0.0,
+    "match_reason": str,
+    "strengths" : [],
+    "missing_skills": [str]
 }
 
 
 result = graph.invoke(initial_state)
 
-# # pprint(result)
+pprint(result)
 
 # print("=" * 50)
 # print("Resume Preview")
@@ -57,8 +60,47 @@ result = graph.invoke(initial_state)
 
 # skills = extract_skills_from_text(sample_text)
 
-print(result["jd_skills"])
-print(result["resume_skills"])
+# print(result["jd_skills"])
+# print(result["resume_skills"])
 
 # Experienced Python developer with expertise in FastAPI,
 # LangGraph, Docker, SQL, Git, TensorFlow and AWS.
+
+from utils.match_score import calculate_match_score
+
+# resume_text = """
+# Experienced Python developer with FastAPI, Docker,
+# LangChain, SQL and Git.
+# Built multiple backend APIs.
+# """
+
+# resume_skills = [
+#     "Python",
+#     "FastAPI",
+#     "Docker",
+#     "LangChain",
+#     "SQL",
+#     "Git"
+# ]
+
+# jd_text = """
+# Looking for a Backend AI Engineer having Python,
+# FastAPI, Docker, PostgreSQL and LangGraph experience.
+# """
+
+# jd_skills = [
+#     "Python",
+#     "FastAPI",
+#     "Docker",
+#     "PostgreSQL",
+#     "LangGraph"
+# ]
+
+# result = calculate_match_score(
+#     resume_text,
+#     resume_skills,
+#     jd_text,
+#     jd_skills
+# )
+
+# print(result)
